@@ -219,6 +219,6 @@ I want to thank all my colleagues that share knowledge with and inspired to to i
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [LICENSE](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
