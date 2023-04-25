@@ -19,7 +19,6 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
-  - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -85,7 +84,7 @@ React.js
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
+<!-- LIVE DEMO 
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
@@ -93,7 +92,7 @@ It will be available soon!
 - [Live Demo Link]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+-->
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
