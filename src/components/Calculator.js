@@ -19,6 +19,12 @@ function Calculator() {
         <CalculatorButton value="9" />
         <CalculatorButton value="x" />
       </div>
+      <div>
+        <CalculatorButton value="4" />
+        <CalculatorButton value="5" />
+        <CalculatorButton value="6" />
+        <CalculatorButton value="-" />
+      </div>
     </>
   );
 }
