@@ -1,0 +1,121 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-light: #f3f3f3;
+  --background-dark: #ffffff;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --font-primary: 'Roboto', sans-serif;
+  --button-width: 7rem;
+  --zero-button-width: calc(2 * var(--button-width) + 4px);
+  --button-margin: 2px;
+  --button-color: #e6e6e6;
+  --button-color-hover: #d6d6d6;
+  --operation-button-color: #ff9800;
+  --operation-button-color-hover: #e68a00;
+  --light-gray: #a1a1a1;
+}
+
+body {
+  background-color: var(--background-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+.calculator {
+  background-color: var(--background-dark);
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.calculator-display {
+  width: 100%;
+  background-color: rgb(162, 159, 159);
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+input[type='text'] {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  font-size: 2rem;
+  text-align: right;
+  outline: none;
+  color: white;
+}
+
+.calculator-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator-button {
+  background-color: var(--button-color);
+  width: var(--button-width);
+  height: 80px;
+  border: none;
+  font-size: 1.5rem;
+  color: black;
+  border-radius: 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: 2px solid var(--light-gray);
+  padding: 10px 15px;
+  margin: var(--button-margin);
+}
+
+.calculator-button-0 {
+  width: calc(2 * var(--button-width) + var(--button-margin));
+  border-radius: 0;
+}
+
+.calculator-button:hover {
+  background-color: var(--button-color-hover);
+}
+
+.calculator-button.operation {
+  background-color: var(--operation-button-color);
+  color: black;
+}
+
+.calculator-button.operation:hover {
+  background-color: var(--operation-button-color-hover);
+}
+
+@media screen and (max-width: 550px) {
+  :root {
+    --button-width: 4.5rem;
+  }
+  body {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .calculator {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .calculator-button {
+    height: 60px;
+    font-size: 1.2rem;
+  }
+  input[type='text'] {
+    font-size: 1rem;
+  }
+}
