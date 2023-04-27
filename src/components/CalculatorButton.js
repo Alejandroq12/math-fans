@@ -3,7 +3,10 @@ import PropTypes from 'prop-types';
 
 function CalculatorButton({ value }) {
   return (
-    <button type="button">
+    <button
+      type="button"
+      className={`calculator-button calculator-button-${value}`}
+    >
       {value}
     </button>
   );
