@@ -2,8 +2,7 @@ import CalculatorButton from './CalculatorButton';
 
 function Calculator() {
   return (
-    <>
-      <h1>Calculator</h1>
+    <div className="calculator">
       <div>
         <input type="text" readOnly />
       </div>
@@ -36,7 +35,7 @@ function Calculator() {
         <CalculatorButton value="." />
         <CalculatorButton value="=" />
       </div>
-    </>
+    </div>
   );
 }
 
