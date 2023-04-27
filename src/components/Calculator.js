@@ -25,6 +25,12 @@ function Calculator() {
         <CalculatorButton value="6" />
         <CalculatorButton value="-" />
       </div>
+      <div>
+        <CalculatorButton value="1" />
+        <CalculatorButton value="2" />
+        <CalculatorButton value="3" />
+        <CalculatorButton value="+" />
+      </div>
     </>
   );
 }
