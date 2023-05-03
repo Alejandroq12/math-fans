@@ -25,6 +25,9 @@
       "peerDependencies": false
     }]
   },
+  "settings": {
+    "import/core-modules": ["react-router-dom"]
+  },
   "overrides": [
     {
       "files": ["src/**/*Slice.js"],
