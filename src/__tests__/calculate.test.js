@@ -20,4 +20,9 @@ describe('calculate', () => {
     const result = calculate({ total: '6', next: '3', operation: null }, '+/-');
     expect(result).toEqual({ total: '6', next: '-3', operation: null }, '+/-');
   });
+
+  it('should perform the operation and store the result when buttonName is "="', () => {
+    const result = calculate({ total: '6', next: '3', operation: '+' }, '=');
+    expect(result).toEqual({ total: '9', next: null, operation: null });
+  });
 });
