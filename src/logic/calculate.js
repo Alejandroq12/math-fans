@@ -46,6 +46,16 @@ export default function calculate(obj, buttonName) {
     };
   }
 
+  if (buttonName === '%') {
+    if (obj.next) {
+      return { ...obj, next: (parseFloat(obj.next) / 100).toString() };
+    }
+    if (obj.total) {
+      return { ...obj, total: (parseFloat(obj.total) / 100).toString() };
+    }
+    return {};
+  }
+
   if (buttonName === '.') {
     if (obj.next) {
       if (obj.next.includes('.')) {
