@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CalculatorButton renders the calculator button component 1`] = `
+<DocumentFragment>
+  <button
+    class="calculator-button calculator-button-1 calculator-button"
+    type="button"
+  >
+    1
+  </button>
+</DocumentFragment>
+`;
