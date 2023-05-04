@@ -11,22 +11,41 @@
   --background-dark: #fff;
   --shadow-color: rgba(0, 0, 0, 0.1);
   --font-primary: 'Roboto', sans-serif;
+  --font-secondary: 'Playfair Display', serif;
   --button-size: 80px;
   --button-color: #e6e6e6;
   --button-color-hover: #d6d6d6;
   --operation-button-color: #ff9800;
   --operation-button-color-hover: #e68a00;
+  --primary-color: #f093fb;
+  --secondary-color: #f5576c;
+  --text-color-light: #fff;
+  --text-color-dark: #333;
 }
 
 body {
-  background-color: var(--background-light);
+  background-image:
+    linear-gradient(
+      120deg,
+      var(--primary-color) 0%,
+      var(--secondary-color) 100%
+    );
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--font-primary);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
+p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: justify;
+  color: #fff;
+  max-width: 800px;
+}
+
+/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -41,6 +60,7 @@ body {
   margin: 0 0 0 40px;
   text-align: center;
   font-size: 2rem;
+  font-family: var(--font-secondary);
 }
 
 .navbar-links {
@@ -58,11 +78,13 @@ body {
 .navbar-links a {
   text-decoration: none;
   color: white;
+  font-family: var(--font-primary);
+  transition: color 0.3s ease;
 }
 
 .navbar-links a:hover,
 .navbar-links a.active-link {
-  color: #f0c419;
+  color: var(--primary-color);
 }
 
 .calculator {
@@ -112,7 +134,7 @@ input[type='text'] {
   color: black;
   border-radius: 50%;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .calculator-button-0 {
@@ -123,36 +145,62 @@ input[type='text'] {
 
 .calculator-button:hover {
   background-color: var(--button-color-hover);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.calculator-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .calculator-button.operation {
   background-color: var(--operation-button-color);
   color: black;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .calculator-button.operation:hover {
   background-color: var(--operation-button-color-hover);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.calculator-button.operation:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .quote-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 30px;
-  font-size: 1.2rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.quote-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
 }
 
 .quote-text {
-  font-size: 1.5rem;
   font-style: italic;
   text-align: center;
-  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-family: var(--font-secondary);
+  line-height: 1.6;
+  color: var(--text-color-dark);
+  margin-bottom: 1rem;
   max-width: 400px;
 }
 
 .quote-author {
   font-size: 1.2rem;
+  font-family: var(--font-primary);
+  color: var(--text-color-dark);
   font-weight: bold;
   text-align: center;
 }
@@ -178,7 +226,18 @@ input[type='text'] {
   width: 100%;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 .content {
+  animation: fadeIn 1s ease-in-out;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -196,10 +255,22 @@ input[type='text'] {
   padding: 3rem;
 }
 
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
 .home h2 {
   margin-bottom: 3rem;
   text-align: left;
   font-size: 3rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  max-width: 800px;
 }
 
 .home ul {
@@ -225,7 +296,29 @@ input[type='text'] {
 }
 
 .home-list {
-  list-style: none;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-color-light);
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.home-list::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--text-color-light);
+  transition: color 0.3s ease-in-out;
+}
+
+.home-list:hover {
+  color: var(--text-color-dark);
+}
+
+.home-list:hover::before {
+  color: var(--text-color-dark);
 }
 
 @media (max-width: 480px) {
@@ -276,11 +369,18 @@ input[type='text'] {
     font-size: 2rem;
     margin-bottom: 2rem;
     margin-right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
   }
 
   .navbar-name {
     margin-left: 0;
+  }
+
+  .quote-container {
+    padding: 1rem;
   }
 }
 
