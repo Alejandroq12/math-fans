@@ -25,4 +25,9 @@ describe('calculate', () => {
     const result = calculate({ total: '6', next: '3', operation: '+' }, '=');
     expect(result).toEqual({ total: '9', next: null, operation: null });
   });
+
+  it('should store the operation when buttonName is an operation', () => {
+    const result = calculate({ total: '6', next: '3', operation: null }, '+');
+    expect(result).toEqual({ total: '6', next: '3', operation: '+' });
+  });
 });
