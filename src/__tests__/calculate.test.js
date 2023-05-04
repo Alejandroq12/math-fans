@@ -15,4 +15,9 @@ describe('calculate', () => {
     const result = calculate({ total: '6', next: '3.5', operation: null }, '.');
     expect(result).toEqual({ total: '6', next: '3.5', operation: null });
   });
+
+  it('should toggle the sign of the current number when buttonName is "+/-"', () => {
+    const result = calculate({ total: '6', next: '3', operation: null }, '+/-');
+    expect(result).toEqual({ total: '6', next: '-3', operation: null }, '+/-');
+  });
 });
