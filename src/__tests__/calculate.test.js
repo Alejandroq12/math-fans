@@ -10,4 +10,9 @@ describe('calculate', () => {
     const result = calculate({ total: '6', next: '3', operation: null }, '.');
     expect(result).toEqual({ total: '6', next: '3.', operation: null });
   });
+
+  it('should not add a decimal point if the current number already has one', () => {
+    const result = calculate({ total: '6', next: '3.5', operation: null }, '.');
+    expect(result).toEqual({ total: '6', next: '3.5', operation: null });
+  });
 });
