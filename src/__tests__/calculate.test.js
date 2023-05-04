@@ -18,16 +18,20 @@ describe('calculate', () => {
 
   it('should toggle the sign of the current number when buttonName is "+/-"', () => {
     const result = calculate({ total: '6', next: '3', operation: null }, '+/-');
-    expect(result).toEqual({ total: '6', next: '-3', operation: null }, '+/-');
+    expect(result).toEqual({ total: '6', next: '-3', operation: null });
   });
 
   it('should perform the operation and store the result when buttonName is "="', () => {
     const result = calculate({ total: '6', next: '3', operation: '+' }, '=');
     expect(result).toEqual({ total: '9', next: null, operation: null });
   });
-
   it('should store the operation when buttonName is an operation', () => {
     const result = calculate({ total: '6', next: '3', operation: null }, '+');
-    expect(result).toEqual({ total: '6', next: '3', operation: '+' });
+    expect(result).toEqual({ total: '3', next: null, operation: '+' });
+  });
+
+  it('should perform the current operation and update the operation when buttonName is a new operation', () => {
+    const result = calculate({ total: '6', next: '3', operation: '+' }, '*');
+    expect(result).toEqual({ total: '9', next: null, operation: '*' });
   });
 });
