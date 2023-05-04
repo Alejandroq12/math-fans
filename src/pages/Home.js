@@ -5,11 +5,11 @@ function Home() {
     <div className="home">
       <h2>Welcome to Math Fans!</h2>
       <p>
-        The Math Fans website is a single-page application built using React,
-        showcasing my proficiency in creating functional and visually appealing
-        components. I have successfully implemented React Router for navigation
-        between different pages and utilized the Axios library for fetching
-        quotes from an external API.
+        The Math Fans website is a single-page application crafted using React,
+        displaying my skills in building functional and visually attractive
+        components. I&apos;ve effectively incorporated React Router for
+        navigating between different sections and employed the Axios library to
+        fetch quotes from an external API.
       </p>
       <ul>
         <li className="home-list">
@@ -21,23 +21,36 @@ function Home() {
           buttons.
         </li>
         <li className="home-list">
-          Handling component states and user interactions using hooks (useState
-          and useEffect).
+          Managing component states and user interactions with hooks, namely
+          useState and useEffect.
         </li>
         <li className="home-list">
-          Integrating external APIs using the Axios library for fetching quotes.
+          Integrating external APIs by utilizing the Axios library to fetch
+          quotes.
         </li>
         <li className="home-list">
-          Applying responsive CSS styles to ensure an aesthetically pleasing
-          user interface.
+          Applying responsive CSS styles to ensure a pleasing user interface.
+        </li>
+        <li className="home-list">
+          Implementing unit testing with Jest and React Testing Library to
+          ensure component reliability.
+        </li>
+        <li className="home-list">
+          Applying GitFlow as a branching strategy for effective version
+          control.
+        </li>
+        <li className="home-list">
+          Engaging in pair programming to enhance collaboration and code
+          quality.
         </li>
       </ul>
       <p>
-        By completing this project, I have demonstrated a strong understanding
-        of React fundamentals, including state management, component lifecycle,
-        and routing. Furthermore, I have showcased my ability to integrate
-        third-party libraries and APIs, making me a well-rounded developer
-        suitable for modern web development roles.
+        Upon completing this project, I have demonstrated a solid grasp of React
+        fundamentals, including state management, component lifecycle, and
+        routing. Additionally, I have showcased my capability to integrate
+        third-party libraries and APIs, as well as various development
+        methodologies and tools, making me a versatile developer prepared for
+        modern web development roles.
       </p>
     </div>
   );
