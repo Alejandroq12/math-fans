@@ -122,7 +122,7 @@ https://github.com/Alejandroq12/math-fans.git
 
 - Navigate to the location of the folder in your machine:
 
-**``you@your-Pc-name:~$ cd group-capstone-js``**
+**``you@your-Pc-name:~$ cd math-fans``**
 
 ### Install
 
