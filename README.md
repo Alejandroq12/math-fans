@@ -89,7 +89,9 @@ React.js
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://warm-nasturtium-2364c6.netlify.app/)
+- [Live Demo Link Netlify](https://warm-nasturtium-2364c6.netlify.app/)
+- 
+- [Live Demo Link Render](https://math-fans.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
