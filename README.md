@@ -39,8 +39,6 @@
 
 # 📖Math Fans <a name="about-project"></a>
 
-
-
 "Math Fans" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:  Make simple calculations. Read a random math-related quote. By building this application, I will learn how to use React.
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -99,7 +97,6 @@ React.js
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
@@ -154,9 +151,9 @@ npx eslint "**/*.{js,jsx}"
 
 ### Deployment <a name="deployment"></a>
 
-You can deploy this project using: GitHub Pages,
-- I used GitHub Pages to deploy my website.
-- For more information about publishing sources, see "[About GitHub pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#publishing-sources-for-github-pages-sites)".
+You can deploy this project using: Render or Netlify,
+- I used Netlify and Render to deploy my website.
+- For more information about publishing sources, see "[Netlify](https://app.netlify.com/)" or "[Render](https://render.com/)".
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -176,7 +173,8 @@ You can deploy this project using: GitHub Pages,
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **I will create a responsive website.**
+- [x] **I will create a responsive website.**
+- [ ] **i will add more pages.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
