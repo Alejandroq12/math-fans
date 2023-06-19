@@ -173,7 +173,8 @@ You can deploy this project using: Render or Netlify,
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **I will create a responsive website.**
+- [x] **I will create a responsive website.**
+- [ ] **i will add more pages.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
