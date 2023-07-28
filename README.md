@@ -8,9 +8,7 @@
   <h3><b>Math Fans</b></h3>
 
 </div>
-
 <!-- TABLE OF CONTENTS -->
-
 # 📗 Table of Contents
 
 - [math-fans](#math-fans)
